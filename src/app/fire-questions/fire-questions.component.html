@@ -9,7 +9,7 @@
 <div><input #a2 type=text></div>
 <div><input #a3 type=text></div>
 <div><input #a4 type=text></div>
-<div><button (click)="this.add(q.value, a.value, a1.value, a2.value, a3.value, a4.value)">Adicionar</button></div>
+<div><button (click)="this.add(q.value, a.value, a1.value, a2.value, a3.value)">Adicionar</button></div>
 <hr/>
 <table class="table">
   <tr>
@@ -19,7 +19,7 @@
     <th>Alternativa 1</th>
     <th>Alternativa 2</th>
     <th>Alternativa 3</th>
-    <th>Alternativa 4</th>
+
   </tr>
   <tr *ngFor="let question of list | async">
     <td>
@@ -31,6 +31,6 @@
     <td>{{question.alternative1}}</td>
     <td>{{question.alternative2}}</td>
     <td>{{question.alternative3}}</td>
-    <td>{{question.alternative4}}</td>
+   
   </tr>
 </table>

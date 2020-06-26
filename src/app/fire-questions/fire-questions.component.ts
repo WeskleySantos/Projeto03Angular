@@ -22,15 +22,14 @@ export class FireQuestionsComponent implements OnInit {
     );
   }
 
-  add(q: string, a: string, a1: string, a2: string, a3: string, a4: string) {
+  add(q: string, a: string, a1: string, a2: string, a3: string) {
     this.listRef.push(
       {
         question: q,
         answer: a,
         alternative1: a1,
         alternative2: a2,
-        alternative3: a3,
-        alternative4: a4
+        alternative3: a3
       }
     );
   }
