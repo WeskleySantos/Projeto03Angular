@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-lists": {
+      "hosting": {
+        "client-http": [
+          "ng-lists"
+        ]
+      }
+    }
+  }
+}

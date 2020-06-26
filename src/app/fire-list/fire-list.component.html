@@ -1,0 +1,21 @@
+<h2>Firebae List</h2>
+<hr/>
+<input #text type="text"/>
+<input #number type="number"/>
+<button (click)="this.add(text.value, number.value)">Adicionar</button>
+<hr/>
+<table class="table">
+  <tr>
+    <th>Chave</th>
+    <th>Texto</th>
+    <th>Número</th>
+  </tr>
+  <tr *ngFor="let item of list | async">
+    <td>
+      {{item.key}}
+      <div><button (click)="this.delete(item.key)">Remover</button></div>
+    </td>
+    <td>{{item.text}}</td>
+    <td>{{item.number}}</td>
+  </tr>
+</table>
