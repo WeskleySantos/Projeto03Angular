@@ -30,8 +30,7 @@ export class QuizComponent implements OnInit {
       );
     }
   
-
-    add(nm: string) {
+      add(nm: string) {
       this.nomesRef.push(
         {
           nome: nm,
