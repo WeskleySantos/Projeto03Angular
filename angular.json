@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "client-http"
+  "defaultProject": "client-http",
+  "cli": {
+    "analytics": false
+  }
 }
